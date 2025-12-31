@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto JJS Premium | by sla_midd</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #111;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid red;
+        }
+        h1 {
+            color: #ff2969;
+            margin-bottom: 10px;
+        }
+        code {
+            background: #222;
+            padding: 15px;
+            border-radius: 5px;
+            display: block;
+            margin: 20px 0;
+            font-family: monospace;
+            color: lime;
+            word-break: break-all;
+        }
+        .warning {
+            background: rgba(255, 0, 0, 0.1);
+            border: 1px solid red;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .features {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .features li {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AUTO JJS PREMIUM</h1>
+        <p>by sla_midd</p>
+        
+        <div class="warning">
+            <strong>ATENCAO:</strong> Este script requer execucao via Roblox Executor.
+        </div>
+        
+        <p>Para usar, execute no Roblox:</p>
+        <code id="scriptCode">loadstring(game:HttpGet("https://seu-site.com/raw.js"))()</code>
+        
+        <div class="features">
+            <h3>Recursos:</h3>
+            <ul>
+                <li>Contagem automatica 0-5000</li>
+                <li>Pulo automatico corrigido</li>
+                <li>Interface Rayfield moderna</li>
+                <li>Sistema de cache local</li>
+                <li>Protecao contra downloads</li>
+            </ul>
+        </div>
+        
+        <p style="color: #888; margin-top: 30px;">
+            Protegido contra acesso direto e ferramentas de download.
+        </p>
+    </div>
+    
+    <script>
+        // Atualizar URL automaticamente
+        document.getElementById('scriptCode').textContent = 
+            'loadstring(game:HttpGet("' + window.location.origin + '/raw.js"))()';
+        
+        // Protecao basica
+        document.addEventListener('contextmenu', function(e) {
+            if (e.target.tagName === 'CODE') {
+                e.preventDefault();
+                alert('Use o executor para acessar o script.');
+            }
+        });
+    </script>
+</body>
+</html>
